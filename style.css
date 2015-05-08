@@ -1,0 +1,1658 @@
+@import "reset.css";
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+@charset "UTF-8";
+* {
+	padding: 0;
+	margin: 0;
+	
+}
+
+.fltLeft {
+	float:left;
+}
+
+.fltRight {
+	float:right;
+}
+
+body {
+	font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+	font-size: 100%;
+	color: #555;
+	background-color:#aaa;
+	width: 100%;
+	margin: auto;
+
+}
+
+/* Desktop Styles */
+
+@media all and (min-width:780px) {
+
+body {
+	width: 100%;
+	min-width: 780px;
+}
+
+/* D - Header */
+
+header {
+	background-color: #222;
+	height: 80px;
+	width: 100%;
+	position: fixed;
+}
+
+#logo {
+	width: 200px;
+	height: 60px;
+	float: left;
+
+}
+
+#logo img {
+	border: none;
+	margin-left: 20px;
+	/*max-width: 400px;*/
+}
+
+nav {
+	height: 70px;
+	max-width:940px;
+	width:100%;
+	font-size: 1.0em;
+	margin: 0 auto;
+}
+
+
+
+
+
+.nav-collapse ul {
+	display: none;
+}
+
+.nav-collapse li {
+	display: none;
+}
+
+.js .nav-collapse {
+	display: none;
+}
+
+.nav-collapse.opened {
+	display: none;
+
+}
+
+.nav-toggle {
+	display: none;
+
+}
+
+
+
+
+
+
+
+.current {
+	background-color: #555;
+	height: 50px;
+
+}
+
+nav ul {
+	text-align: center;
+
+}
+
+nav ul li {
+	font-family: 'Allerta Stencil', sans-serif;
+	font-variant: small-caps;
+	font-size: 1.4em;
+	display: inline-block;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: right;
+	vertical-align: center;
+
+
+}
+
+nav ul li a {
+	color: #eee;
+	text-decoration: none;
+	display: block;
+
+}
+
+nav ul li:hover {
+	background-color: #555;
+	height: 50px;
+	
+}
+
+/* D - Main */
+
+#splash {
+	display:block;
+	padding-top: 78px;
+	height: 300px;
+	max-width: 960px;
+	min-width: 780px;
+
+	margin: 0 auto;
+}
+
+#splash img {
+		width:100%;
+		max-width: 960px;
+}
+
+#main {
+	display:block;
+	max-width: 940px;
+	margin: 0 auto;
+	background-color: #aaa;
+}
+
+section {
+	/*max-width: 680px;*/
+	width: 72%;
+	float: left;
+	font-size: 1.0em;
+	background-color: #aaa;
+	margin-bottom: 20px;
+
+}
+
+section img {
+	float: left;
+	padding: 0px 10px 5px 0px;
+
+}
+
+section a {
+	color: #666;
+	text-decoration: none;
+
+}
+
+section a:hover {
+	color:#777;
+
+}
+
+.wrestlerPic {
+	width: 60%;
+	margin-bottom:5px;
+}
+.stat {
+	margin-bottom: 25px;
+}
+
+#wrestlerSocial {
+	text-align: justify;
+	height: 60px;
+}
+
+#wrestlerSocial img {
+	display: inline-block;
+	border: none;
+}
+
+#wrestlerSocial:after {
+	content: "";
+    width: 80%;
+    display: inline-block;
+}
+
+.newsContent {
+	height: 175px;
+	max-width: 680px;
+	min-width: 540px;
+	clear:both;
+}
+
+#content1 {
+	height: 175px;
+	max-width: 680px;
+	min-width: 540px;
+
+}
+
+#content2 {
+	height: 175px;
+	max-width: 680px;
+	min-width: 540px;
+
+}
+
+#content3 {
+	height: 175px;
+	max-width: 680px;
+	min-width: 540px;
+
+}
+
+#wrestler {
+	max-width: 680px;
+	min-width: 540px;
+}
+
+.aboutPic {
+	width:100%;
+}
+.roster {
+	width:30%;
+	padding-top:10px;
+	margin-right: 2.7%;
+	display: inline-block;
+}
+.roster h3 {
+	text-align: center;
+}
+img {
+	display: inline-block;
+	border: none;
+	margin-right:10px;
+}
+
+p {
+	color: #444;
+	font-size: 1.0em;
+	margin-top: 5px;
+	margin-right: 10px;
+
+}
+
+h1 {
+	font-family: 'Stardos Stencil', cursive;	
+	color: #222;
+	font-variant: small-caps; 
+	text-transform: none;
+	font-size: 2.0em;
+	margin-top: 10px;
+	margin-right: 10px;
+
+}
+
+h2 {
+	font-family: 'Stardos Stencil', cursive;	
+	font-weight: lighter;
+	color: #222;
+	font-size: 1.6em;
+	margin-top: 10px;
+	margin-right: 10px;
+
+}
+
+h3, h4 {
+	font-family: 'Stardos Stencil', cursive;	
+	font-weight: lighter;
+	color: #222;
+	font-size: 1.2em;
+	margin-top: 5px;
+	margin-right: 10px;
+
+}
+
+blockquote {
+	color: #333;
+	font-size: 1.0em;
+	margin-top: 5px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+ol {
+	list-style-type: none;
+	color: #333;
+	font-size: 1.0em;
+	margin-top: 10px;
+	margin-right: 30px;
+	margin-left: 28px;
+}
+
+ul {
+	color: #333;
+	list-style-type: none;
+	font-size: 1.0em;
+	margin-top: 10px;
+	margin-right: 30px;
+
+}
+
+.left {
+
+}
+
+aside {
+	width: 220px;
+	float: right;
+	margin-top: 0px;
+	background-color: #aaa;
+	margin-bottom: 20px;
+
+}
+
+aside img {
+	margin-top: 10px;
+}
+
+aside p {
+}
+
+#event1 {
+	width:100%;
+	padding-bottom: 10px;
+
+}
+
+#event2 {
+	width:100%;
+	padding-bottom: 10px;
+
+}
+
+#event3 {
+	width:100%;
+	padding-bottom: 10px;
+
+}
+
+#event4 {
+	width:100%;
+	padding-bottom: 10px;
+
+}
+
+#footerLogo {
+	background-color: #222;
+	width: 50%;
+	height: 60px;
+	float:left;
+
+}
+
+#footerLogo img {
+	border: none;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+#footerSocial {
+	background-color: #222;
+	width: 50%;
+	height: 60px;
+	float: right;
+
+}
+
+#footerSocial img {
+	border: none;
+	margin-right: 25px;
+	float: right;
+
+}
+
+
+#footerNav {
+	width: 50%;
+	height:70px;
+	background-color: #222;
+	margin: auto;
+	
+}
+
+#footerNav ul {
+	text-align: left;
+	margin-left: 25px;
+
+}
+
+#footerNav ul li {
+	font-family: 'Allerta Stencil', sans-serif;
+	font-size: 0.6em;
+	color: #555;
+	display: inline;
+	margin-left: 10px;
+	margin-right: 10px;
+
+
+}
+
+#footerNav ul li a {
+	color: #555;
+	text-decoration: underline;
+}
+
+#footerNav ul li a:hover {
+	color: #aaa;
+}
+
+#footerSig {
+	width: 50%;
+	height:70px;
+	background-color: #222;
+	margin: auto;
+	
+}
+
+#footerSig ul {
+	text-align: right;
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+
+#footerSig ul li {
+	font-family: 'Allerta Stencil', sans-serif;
+	font-size: 0.6em;
+	color: #444;
+	display: inline;
+
+}
+
+#footerSig ul li a {
+	color: #444;
+	text-decoration: none;
+}
+
+#footerSig ul li a:hover {
+	color: #555;
+}
+
+
+footer {
+	clear: both;
+	width: 100%;
+	background-color: #222;
+	margin: auto;
+	padding-top: 10px;
+	
+}
+
+footer ul {
+	text-align: left;
+}
+
+footer ul li {
+	font-family: 'Allerta Stencil', sans-serif;
+	color: #555;
+	display: inline;
+
+}
+
+footer ul li a {
+	color: #444;
+	text-decoration: none;
+}
+
+footer ul li a:hover {
+	color: #555;
+}
+}
+
+
+/* Tablet Styles */
+
+@media all and (min-width:481px) and (max-width:779px) {
+
+body {
+	width: 100%;
+	max-width:779px;
+	min-width: 481px;
+}
+
+/* T - Header */
+
+header {
+	background-color: #222;
+	height: 80px;
+	width: 100%;
+	position: fixed;
+}
+
+#logo {
+	width: 200px;
+	height: 60px;
+	float: left;
+
+
+}
+
+#logo img {
+	border: none;
+	padding-top: 10px;
+	margin-left: 20px;
+}
+
+nav {
+	height: 70px;
+	max-width:940px;
+	width:100%;
+	font-size: 1.0em;
+	margin: 0 auto;
+}
+
+.navIcon {
+	float: right;
+	padding-top: 10px;
+	margin-right: 20px;	
+
+}
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+.nav-collapse.closed {
+  clear:both;
+ }
+
+.nav-collapse.opened {
+  max-height: 9999px;
+  clear:both;
+
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+
+.current {
+	background-color: #555;
+	height: 20px;
+
+}
+
+nav ul {
+	background-color: #222;
+	text-align: center;
+	display:none;
+
+}
+
+nav ul li {
+	font-family: 'Allerta Stencil', sans-serif;
+	font-variant: small-caps;
+	font-size: 1.4em;
+	display: block;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	vertical-align: center;
+
+
+}
+
+nav ul li a {
+	color: #eee;
+	text-decoration: none;
+	display: block;
+
+}
+
+nav ul li:hover {
+	background-color: #555;
+	height: 20px;
+	
+}
+
+/* T - Main */
+
+#splash {
+	width:100%;
+	display:block;
+	padding-top: 78px;
+	margin: 0 auto;
+}
+
+#splash img {
+	width:100%;
+
+}
+
+#main {
+	display:block;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #aaa;
+}
+
+section {
+	width: 90%;
+	margin: 0 auto;
+	clear: both;
+	font-size: 1.0em;
+	background-color: #aaa;
+	margin-bottom: 20px;
+
+}
+
+section img {
+	float: left;
+	padding: 0px 10px 5px 0px;
+
+}
+
+section a {
+	color: #666;
+	text-decoration: none;
+	background-color:#aaa;
+}
+
+section a:hover {
+	color:#777;
+
+}
+
+.wrestlerPic {
+	width: 60%;
+	margin-bottom:5px;
+
+}
+
+.stat {
+	margin-bottom: 25px;
+}
+
+#wrestlerSocial {
+	text-align: justify;
+	height: 60px;
+}
+
+#wrestlerSocial img {
+	display: inline-block;
+	border: none;
+}
+
+#wrestlerSocial:after {
+	content: "";
+    width: 80%;
+    display: inline-block;
+}
+
+#wrestler {
+	width: 100%;
+}
+
+.aboutPic {
+	width:100%;
+}
+.roster {
+	width:30%;
+	padding-top:10px;
+	margin-right: 1.4%;
+	margin-left: 1.4%;
+	display: inline-block;
+}
+.roster h3 {
+	text-align: center;
+}
+.roster img {
+	margin-right: 0px;
+}
+.newsContent {
+	min-height: 175px;
+	width: 100%;
+}
+#content1 {
+	min-height:175px;
+	max-height:200px;
+	width:100%;
+
+}
+
+#content2 {
+	min-height:175px;
+	max-height:200px;
+	width:100%;
+
+}
+
+#content3 {
+	min-height:175px;
+	max-height:200px;
+	width:100%;
+
+}
+
+img {
+	display: inline-block;
+	border: none;
+	margin-right:10px;
+}
+
+p {
+	color: #444;
+	font-size: 1.0em;
+	margin-top: 5px;
+
+}
+
+h1 {
+	font-family: 'Stardos Stencil', cursive;	
+	color: #222;
+	font-variant: small-caps; 
+	text-transform: none;
+	font-size: 2.0em;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Stardos Stencil', cursive;	
+	font-weight: lighter;
+	color: #222;
+	font-size: 1.6em;
+	margin-top: 10px;
+
+}
+
+h3, h4 {
+	font-family: 'Stardos Stencil', cursive;	
+	font-weight: lighter;
+	color: #222;
+	font-size: 1.2em;
+	margin-top: 5px;
+
+}
+
+blockquote {
+	color: #333;
+	font-size: 1.0em;
+	margin-top: 5px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+ol {
+	list-style-type: none;
+	color: #333;
+	font-size: 1.0em;
+	margin-top: 10px;
+	margin-right: 30px;
+	margin-left: 28px;
+}
+
+ul {
+	color: #333;
+	list-style-type: none;
+	font-size: 1.0em;
+	margin-top: 10px;
+}
+
+.left {
+	margin-left: 20px;
+
+}
+
+aside {
+	width: 100%;
+	height:150px;
+	margin: 0 auto;
+	margin-top: 0px;
+	background-color: #aaa;
+	margin-bottom: 20px;
+	display: inline-block;
+
+}
+
+aside ul li {
+	display: inline-block;
+
+}
+
+aside img {
+	margin-top: 10px;
+	vertical-align: center;
+	width: 100%;
+}
+
+aside p {
+}
+
+#event1 {
+	margin-left:10%;
+	width:35%;
+	padding-bottom: 10px;
+	float: left;
+}
+
+#event2 {
+	margin-right:10%;
+	width:35%;
+	padding-bottom: 10px;
+	float: right;
+
+}
+
+#event2 p {
+	text-align: right;
+
+}
+
+#event2 h3 {
+	text-align: right;
+
+}
+
+#event2 img {
+	float: right;
+	margin-bottom: 10px;
+	margin-right:0px;
+	width: 100%;
+
+}
+
+#event3 {
+	width:100%;
+	padding-bottom: 10px;
+	display: none;
+
+}
+
+#event4 {
+	width:100%;
+	padding-bottom: 10px;
+	display: none;
+
+}
+
+#footerLogo {
+	background-color: #222;
+	width: 50%;
+	height: 70px;
+	float:left;
+
+}
+
+#footerLogo img {
+	border: none;
+	margin-left: 25px;
+	margin-right: 10px;
+}
+
+#footerSocial {
+	background-color: #222;
+	width: 50%;
+	height: 70px;
+	float: right;
+
+}
+
+#footerSocial img {
+	border: none;
+	padding-top: 5px;
+	margin-left: 5px;
+	margin-right: 25px;
+	float: right;
+
+}
+
+
+#footerNav {
+	width: 50%;
+	height:70px;
+	background-color: #222;
+	margin: auto;
+	
+}
+
+#footerNav ul {
+	text-align: left;
+	margin-left: 25px;
+
+
+}
+
+#footerNav ul li {
+	font-family: 'Allerta Stencil', sans-serif;
+	font-size: 0.6em;
+	color: #555;
+	display: inline;
+	margin-left: 10px;
+	margin-right: 10px;
+
+
+}
+
+#footerNav ul li a {
+	color: #555;
+	text-decoration: underline;
+}
+
+#footerNav ul li a:hover {
+	color: #aaa;
+}
+
+#footerSig {
+	width: 50%;
+	height:70px;
+	background-color: #222;
+	margin: auto;
+	
+}
+
+#footerSig ul {
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+
+#footerSig ul li {
+	font-family: 'Allerta Stencil', sans-serif;
+	font-size: 0.6em;
+	color: #444;
+	display: inline;
+
+}
+
+#footerSig ul li a {
+	color: #444;
+	text-decoration: none;
+}
+
+#footerSig ul li a:hover {
+	color: #555;
+}
+
+
+footer {
+	clear: both;
+	width: 100%;
+	background-color: #222;
+	margin: auto;
+	padding-top: 10px;
+	
+}
+
+footer ul {
+	text-align: left;
+}
+
+footer ul li {
+	font-family: 'Allerta Stencil', sans-serif;
+	color: #555;
+	display: inline;
+
+}
+
+footer ul li a {
+	color: #444;
+	text-decoration: none;
+}
+
+footer ul li a:hover {
+	color: #555;
+}
+}
+
+/* Phone Styles */
+
+@media all and (max-width:480px) {
+
+body {
+	width: 100%;
+	max-width: 480px;
+}
+
+header {
+	background-color: #222;
+	height: 80px;
+	width: 100%;
+	position: fixed;
+}
+
+#logo {
+	width: 200px;
+	height: 60px;
+	float: left;
+
+}
+
+#logo img {
+	padding-top: 10px;
+	border: none;
+	margin-left: 10px;
+}
+
+nav {
+	height: 70px;
+	max-width:940px;
+	width:100%;
+	font-size: 1.0em;
+	margin: 0 auto;
+}
+
+.navIcon {
+	float: right;
+	padding-top: 10px;
+	margin-right: 20px;	
+
+}
+
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+.nav-collapse.closed {
+  clear:both;
+ }
+.nav-collapse.opened {
+  max-height: 9999px;
+  clear:both;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+  	clear:both;
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.current {
+	background-color: #555;
+	height: 20px;
+
+}
+
+nav ul {
+	background-color: #222;
+	text-align: center;
+	display:none;
+
+}
+
+nav ul li {
+	font-family: 'Allerta Stencil', sans-serif;
+	font-variant: small-caps;
+	font-size: 1.4em;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	vertical-align: center;
+
+
+}
+
+nav ul li a {
+	color: #eee;
+	text-decoration: none;
+	display: block;
+
+}
+
+nav ul li:hover {
+	background-color: #555;
+	height: 20px;
+	
+}
+
+#nav-sel {
+	width:60px;
+	height:25px;
+
+}
+
+nav select {
+  display: none;
+}
+
+/* M - Main */
+
+#splash {
+	width:100%;
+	display:block;
+	padding-top: 78px;
+	margin: 0 auto;
+}
+
+#splash img {
+	width:100%;
+
+}
+
+#main {
+	display:block;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #aaa;
+}
+
+section {
+	width: 96%;
+	margin: 0 auto;
+	font-size: 1.0em;
+	background-color: #aaa;
+	margin-bottom: 20px;
+
+}
+
+section img {
+	float: left;
+	padding: 0px 10px 5px 0px;
+
+}
+
+section a {
+	color: #666;
+	text-decoration: none;
+
+}
+
+section a:hover {
+	color:#777;
+
+}
+
+.wrestlerPic {
+	width: 100%;
+	clear: both;
+	margin-bottom:5px;
+
+}
+.stat {
+	margin-bottom: 25px;
+}
+
+#wrestlerSocial {
+	text-align: justify;
+	height: 60px;
+}
+
+#wrestlerSocial img {
+	display: inline-block;
+	border: none;
+}
+
+#wrestlerSocial:after {
+	content: "";
+    width: 80%;
+    display: inline-block;
+}
+
+.aboutPic {
+	width:100%;
+}
+.roster {
+	width:45%;
+	padding-top:10px;
+	margin-right: 2%;
+	margin-left: 2%;
+	display: inline-block;
+
+}
+.roster img {
+}
+.roster h3 {
+	text-align: center;
+}
+.newsContent {
+	padding-bottom: 10px;
+	width: 100%;
+	clear:both;
+}
+#content1 {
+	width:100%;
+	padding-bottom: 10px;
+
+}
+
+#content2 {
+	width:100%;
+	padding-bottom: 10px;
+
+}
+
+#content3 {
+	width:100%;
+	padding-bottom: 10px;
+
+}
+
+img {
+	display: inline-block;
+	border: none;
+	margin-right:5px;
+}
+
+p {
+	color: #444;
+	font-size: 1.0em;
+	padding-top: 5px;
+	margin-right: 5px;
+
+}
+
+h1 {
+	font-family: 'Stardos Stencil', cursive;	
+	color: #222;
+	font-variant: small-caps; 
+	text-transform: none;
+	font-size: 2.0em;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+
+}
+
+h2 {
+	font-family: 'Stardos Stencil', cursive;	
+	font-weight: lighter;
+	color: #222;
+	font-size: 1.6em;
+	padding-top: 10px;
+	margin-right: 10px;
+
+}
+
+h3, h4 {
+	font-family: 'Stardos Stencil', cursive;	
+	font-weight: lighter;
+	color: #222;
+	font-size: 1.2em;
+	margin-top: 5px;
+
+}
+
+blockquote {
+	color: #333;
+	font-size: 1.0em;
+	margin-top: 5px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+ol {
+	list-style-type: none;
+	color: #333;
+	font-size: 1.0em;
+	margin-top: 10px;
+	margin-right: 30px;
+	margin-left: 28px;
+}
+
+ul {
+	color: #333;
+	list-style-type: none;
+	font-size: 1.0em;
+	margin-top: 10px;
+}
+
+.left {
+	margin-left: 20px;
+
+}
+
+.right {
+	margin-right: 20px;
+
+}
+
+aside {
+	width: 100%;
+	height:150px;
+	float: right;
+	margin-top: 0px;
+	background-color: #aaa;
+	margin-bottom: 20px;
+
+}
+
+aside ul li {
+	display: inline-block;
+
+}
+
+aside img {
+	margin-top: 10px;
+	width: 100%;
+}
+
+aside p {
+}
+
+#event1 {
+	margin-left:5%;
+	width:40%;
+	padding-bottom: 10px;
+	float: left;
+}
+
+#event2 {
+	margin-right:5%;
+	width:40%;
+	padding-bottom: 10px;
+	float: right;
+
+}
+
+#event2 p {
+	text-align: right;
+
+}
+
+#event2 h3 {
+	text-align: right;
+
+}
+
+#event2 img {
+	float: right;
+	margin-bottom: 10px;
+	width: 100%;
+
+}
+
+#event3 {
+	width:100%;
+	padding-bottom: 10px;
+	display: none;
+
+}
+
+#event4 {
+	width:100%;
+	padding-bottom: 10px;
+	display: none;
+
+}
+#footerLogo {
+	background-color: #222;
+	text-align: center;
+	width: 100%;
+	height: 70px;
+
+}
+
+#footerLogo img {
+	display: inline-block;
+	border: none;
+	/*margin-left: 5px;
+	margin-right: 5px;*/
+}
+
+
+#footerSocial {
+	text-align: justify;
+	background-color: #222;
+	width: 100%;
+	height: 60px;
+}
+
+#footerSocial img {
+	display: inline-block;
+	border: none;
+	/*margin-left: 5px;
+	margin-right: 5px;*/
+}
+
+#footerSocial:after {
+	content: "";
+    width: 80%;
+    display: inline-block;
+}
+
+
+#footerNav {
+	width: 100%;
+	height:70px;
+	background-color: #222;
+	margin: 0 auto;
+	
+}
+
+#footerNav ul {
+	text-align: center;
+
+}
+
+#footerNav ul li {
+	font-family: 'Allerta Stencil', sans-serif;
+	font-size: 0.6em;
+	color: #555;
+	display: inline-block;
+	margin-left: 3px;
+
+
+}
+
+#footerNav ul li a {
+	color: #555;
+	text-decoration: underline;
+}
+
+#footerNav ul li a:hover {
+	color: #aaa;
+}
+
+#footerSig {
+	width: 100%;
+	height:40px;
+	background-color: #222;
+	margin: 0 auto;
+
+}
+
+#footerSig ul {
+	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+#footerSig ul li {
+	font-family: 'Allerta Stencil', sans-serif;
+	font-size: 0.6em;
+	color: #444;
+	display: inline-block;
+	margin-right: 2px;
+
+}
+
+#footerSig ul li a {
+	color: #444;
+	text-decoration: none;
+}
+
+#footerSig ul li a:hover {
+	color: #555;
+}
+
+
+footer {
+	clear: both;
+	width: 100%;
+	background-color: #222;
+	margin: auto;
+	padding-top: 10px;
+	
+}
+
+footer ul {
+	text-align: left;
+}
+
+footer ul li {
+	font-family: 'Allerta Stencil', sans-serif;
+	color: #555;
+	display: inline;
+
+}
+
+footer ul li a {
+	color: #444;
+	text-decoration: none;
+}
+
+footer ul li a:hover {
+	color: #555;
+}
+}
