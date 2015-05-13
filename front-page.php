@@ -14,6 +14,6 @@
             </div><!--End of wrestler-->
             
 		</section>
-<small><?php echo basename($_SERVER['PHP_SELF']); ?></small>
+<small>front-page.php</small>
 
 <?php get_footer(); ?>

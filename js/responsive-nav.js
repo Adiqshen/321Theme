@@ -197,7 +197,7 @@
         this.options = {
           animate: true,                    // Boolean: Use CSS3 transitions, true or false
           transition: 284,                  // Integer: Speed of the transition, in milliseconds
-          label: "<img src='images/navIcon.png' class='navIcon' />",                    // String: Label for the navigation toggle
+          label: "<img src='<?php bloginfo('template_directory'); ?>/images/navIcon.png' class='navIcon' />",                    // String: Label for the navigation toggle
           insert: "before",                 // String: Insert the toggle before or after the navigation
           customToggle: "",                 // Selector: Specify the ID of a custom toggleEl
           closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked

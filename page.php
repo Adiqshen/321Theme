@@ -4,7 +4,12 @@
 
 		</div><!-- End of splash -->
 <?php get_sidebar(); ?>
-
+        <div id=rosterCat><!-- Display on Roster pages -->
+            <ul>
+                <?php if ($post->post_parent) { wp_list_pages(array('child_of' => $post->post_parent, 'title_li' => __(''))); 
+                } else { wp_list_pages(array('child_of' => $post->ID, 'title_li' => __('')));} ?>
+            </ul>
+        </div><!-- End of rosterCat -->
 		<section>
             <div id="wrestler">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -12,8 +17,6 @@
                 <?php the_content(''); ?>				
                 <?php endwhile; endif; ?>
             </div><!--End of wrestler-->
-            
 		</section>
-<small><?php echo basename($_SERVER['PHP_SELF']); ?></small>
-
+<small>page.php</small>
 <?php get_footer(); ?>
