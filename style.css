@@ -315,21 +315,7 @@ section a:hover {
 	clear:both;
 }
 
-#content1 {
-	height: 175px;
-	max-width: 680px;
-	min-width: 540px;
-
-}
-
-#content2 {
-	height: 175px;
-	max-width: 680px;
-	min-width: 540px;
-
-}
-
-#content3 {
+.homeContent {
 	height: 175px;
 	max-width: 680px;
 	min-width: 540px;
@@ -352,6 +338,10 @@ section a:hover {
 }
 .roster h3 {
 	text-align: center;
+}
+    
+small {
+    clear:both;
 }
 img {
 	display: inline-block;
