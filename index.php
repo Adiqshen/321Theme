@@ -14,7 +14,7 @@
                 <?php the_post_thumbnail( 'thumbnail' ); ?>
                 <?php the_excerpt(); ?>	... <a href="<?php the_permalink(); ?>">Read the whole story</a> ...
                 
-            </div><!--End of wrestler-->
+            </div><!--End of div class newsContent-->
             <hr>
                 <?php endwhile; endif; ?>
             
