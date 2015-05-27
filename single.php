@@ -8,7 +8,9 @@
 		<section>
             <div id="wrestler">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <h2><?php the_title(); ?></h2>
+                    <small>Posted by <?php the_time('F j, Y'); ?> by <?php the_author(); ?> in <?php the_category(', '); ?></small>
+                <?php the_post_thumbnail( 'medium' ); ?>
                 <?php the_content(''); ?>				
                 <?php endwhile; endif; ?>
             </div><!--End of wrestler-->

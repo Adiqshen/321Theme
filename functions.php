@@ -11,5 +11,7 @@ Version: 1.0
 
 // Register Menus
 register_nav_menus(array('main-menu' => __('Main'),));
+// Theme Support
+add_theme_support( 'post-thumbnails' );
 
 ?>

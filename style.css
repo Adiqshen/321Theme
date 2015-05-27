@@ -309,10 +309,11 @@ section a:hover {
 }
 
 .newsContent {
-	height: 175px;
+	min-height: 175px;
 	max-width: 680px;
 	min-width: 540px;
-	clear:both;
+    clear:both;
+    margin-bottom: 10px;
 }
 
 .homeContent {
@@ -341,9 +342,11 @@ section a:hover {
 }
     
 small {
-    clear:both;
+    font-size: 0.8em;
+    clear: both;
 }
 img {
+    margin-top: 5px;
 	display: inline-block;
 	border: none;
 	margin-right:10px;
