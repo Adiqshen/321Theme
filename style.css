@@ -437,25 +437,7 @@ aside img {
 aside p {
 }
 
-#event1 {
-	width:100%;
-	padding-bottom: 10px;
-
-}
-
-#event2 {
-	width:100%;
-	padding-bottom: 10px;
-
-}
-
-#event3 {
-	width:100%;
-	padding-bottom: 10px;
-
-}
-
-#event4 {
+.eventSide {
 	width:100%;
 	padding-bottom: 10px;
 

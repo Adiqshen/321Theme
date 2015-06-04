@@ -13,5 +13,12 @@ Version: 1.0
 register_nav_menus(array('main-menu' => __('Main'),));
 // Theme Support
 add_theme_support( 'post-thumbnails' );
+// Side-bars
+register_sidebars( 3, array(
+    'before_widget' =>'<div class="event">',
+    'after_widget' =>'</div">',
+    'before_title' =>'<h3>',
+    'after_title' =>'</h3>',
+));
 
 ?>
