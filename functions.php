@@ -20,5 +20,28 @@ register_sidebars( 3, array(
     'before_title' =>'<h3>',
     'after_title' =>'</h3>',
 ));
+// Title Tag
+function get_my_title_tag() {
+    global $post;   
+    if (is_front_page()) {
+        bloginfo('description');
+    }
+    elseif (is_page() || is_single()) {
+        the_title();   
+    } 
+    else {  
+        bloginfo('description');   
+    } 
+    if ( $post->post_parent ) {    
+        echo ' ... ';
+        echo get_the_title($post->post_parent);       
+    }
+    echo ' ... ';
+    bloginfo('name');
+    echo ' ... ';
+    echo 'Seattle, WA.';
+}
+// Excerpts
+add_post_type_support( 'page', 'excerpt' );
 
 ?>

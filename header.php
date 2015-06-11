@@ -4,9 +4,10 @@
 <link href='http://fonts.googleapis.com/css?family=Allerta+Stencil' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Stardos+Stencil' rel='stylesheet' type='text/css'>
 <meta charset="UTF-8">
+<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
 <meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, maximum-scale=2" />
-<title><?php bloginfo('description'); ?> ... <?php bloginfo('name'); ?> ... Seattle, WA</title>
+<title><?php get_my_title_tag(); ?></title>
   <!--[if lt IE 9]>
    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
